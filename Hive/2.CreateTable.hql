@@ -9,7 +9,11 @@ use first_db;
 -- b) External tables
 
 -- create a managed table in the database
-create table if not exists employee(id int, name string,sal float) 
+create table if not exists employee(
+    id int comment 'Id of employee', 
+    name string comment 'Name of Employee',
+    sal float comment 'salary of employee')
+    comment 'Employee table' 
     row format delimited 
     fields terminated by '';
 
