@@ -1,3 +1,4 @@
+-- External table creation 
 create EXTERNAL table employ(
     id int comment 'Identification number',
     name string comment 'name of employ',
