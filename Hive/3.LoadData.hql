@@ -7,8 +7,6 @@
 
 load data local inpath '/home/temp/emp1' into table employee;
 
-
-
 -- 2) By using hdfs
 -- for this first we need toi create a table 
 
