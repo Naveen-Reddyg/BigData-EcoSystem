@@ -8,7 +8,7 @@ use first_db;
 -- a) Managed(internal table)
 -- b) External tables
 
--- create a managed table in the database
+-- a)create a managed table in the database
 create table if not exists employee(
     id int comment 'Id of employee', 
     name string comment 'Name of Employee',
