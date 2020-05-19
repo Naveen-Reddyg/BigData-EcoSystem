@@ -1,4 +1,5 @@
--- creating a table with bucketing(clustering)
+-- creating a table with bucketing(clustering) with parttion
+--bucketing will divide the data
 
 create table Employee(
     id int comment 'id of employee',
@@ -7,4 +8,6 @@ create table Employee(
 )
 comment 'employee table'
 partition by(dept string comment 'dept of employee')
-cluster by (id)
+cluster by (id) into 3 buckets
+row format delimited
+fields terminated by '/000'
