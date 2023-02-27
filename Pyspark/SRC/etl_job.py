@@ -58,6 +58,7 @@ def list_data_frame(spark):
         StructField("id",StringType(),True),\
         StructField("Gender",StringType(),True),\
         StructField("salary",IntegerType(), True)])
+    df2 = spark.createDataFrame(Data = data, schema= columns)
     df = spark.createDataFrame(data = data, schema = schema)
     
     return df
